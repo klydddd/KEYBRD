@@ -140,7 +140,7 @@ h1 {
 
     &:nth-child(3) h1 {
         display: flex;
-        font-size: 30px;
+        font-size: 1.69VW;
         letter-spacing: 0;
         text-align: center;
         
