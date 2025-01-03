@@ -77,13 +77,22 @@
 
         }
 
+        * {
+            animation: entrance 2s linear;
+        }
+
+        @keyframes entrance {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-left">
-                <a href="shop.html"><div class="nav-links">Shop</div></a>
+                <a href="index.html"><div class="nav-links">Shop</div></a>
                 <a href="about.html"><div class="nav-links active">About</div></a>
                 <a href=""><div class="nav-links">Blog</div></a>
             </div>
