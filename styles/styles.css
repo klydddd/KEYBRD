@@ -21,6 +21,20 @@ nav {
 
 }
 
+.nav-left a {
+    transition: all 500ms ease;
+}
+
+.nav-left a :hover {
+    color: red;
+    font-weight: 900;
+}
+
+.keybrd {
+    font-weight: 900;
+    font-size: 12px;
+}
+
 .nav-middle, .nav-left, .nav-right {
     /* flex: 1 1 0; */
     display: flex;
@@ -62,6 +76,11 @@ a {
     text-align: center;
 }
 
+.active {
+    color:#f35f16;
+    font-weight: 900;
+}
+
 main {
     /* background-color: red; */
     background-color: #f0f0f0;
@@ -100,6 +119,15 @@ h1 {
   
 .wrap {
     font-family: michroma;
+}
+
+body {
+    animation: entrance 2s linear;
+}
+
+@keyframes entrance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
