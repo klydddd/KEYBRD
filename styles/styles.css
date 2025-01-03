@@ -57,7 +57,7 @@ nav {
 
 .nav-links {
     height: 30px;
-    width: 70px;
+    width: 100px;
     /* background-color: red; */
     border-radius: 100px;
     display: flex;
@@ -291,6 +291,7 @@ ins {
     align-items: center;
     justify-content: space-around;
     border-radius: 100px;
+    transition: all 200ms ease-in-out;
     
 }
 
@@ -385,3 +386,18 @@ footer {
 h3 {
     text-align: center;
 }
+
+.col img:hover {
+    transform: scale(1.01);
+}
+
+.col img {
+    transition: all 200ms ease-in;
+}
+
+.order:hover {
+    transform: scale(1.05);
+    background-color: #f35f16;
+    color: #f0f0f0;
+}
+

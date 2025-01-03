@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Parisienne&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/forms.css">
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
@@ -22,14 +23,14 @@
         <nav>
             <div class="nav-left">
                 <a href="index.html"><div class="nav-links active">Shop</div></a>
-                <a href="about.html"><div class="nav-links">About</div></a>
-                <a href=""><div class="nav-links">Blog</div></a>
+                <a href="blog.html"><div class="nav-links">Blog</div></a>
+                <a href="https://midterm-exam-lab-main.vercel.app" target="_blank"><div class="nav-links">About us</div></a>
             </div>
             <div class="nav-middle">
                 <a href=""><div class="nav-links keybrd">keybrd</div></a>
             </div>
             <div class="nav-right">
-                <a href=""><div class="nav-links">surprise</div></a>
+                <!-- <a href=""><div class="nav-links">surprise</div></a> -->
             </div>
         </nav>
     </header>
@@ -54,7 +55,7 @@
                             <div class="col-one">
                                 <div class="row">
                                     <p class="left"></p>
-                                    <a href=""><p class="right" id="viewLink">VIEW ALL &#8599;</p></a>
+                                    <a href="blog.html"><p class="right" id="viewLink">VIEW ALL &#8599;</p></a>
                                 </div>
                                 <div class="row">
                                     <p class="left">MODEL </p>
@@ -73,7 +74,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="">
+                    <a href="#orderForm">
                     <div class="order">
                         <p>ORDER NOW</p>
                     </div>
@@ -154,16 +155,16 @@
             </div>
         </div>
         <br>
-        <div class="page-five">
+        <div class="page-five" id="orderForm">
             <div class="photos">
                 <img src="assets/colors/all.png" alt="">
             </div>
-        <div class="order-form">
+        <div class="order-form" >
             <div class="title">
                 <h2>Product Order Form</h2>
             </div>
           <div class="d-flex">
-            <form action="" method="">
+            <form action="" method="" id="myForm">
               <label>
                 <span class="fname">First Name <span class="required">*</span></span>
                 <input type="text" name="fname">
@@ -459,8 +460,9 @@
                 <span>Email Address <span class="required">*</span></span>
                 <input type="email" name="city"> 
               </label>
-
-              <button type="button">Place Order</button>
+              <div class="btncontainer">
+              <button class="orderButton" type="button" onclick="clearInputField(); myFunction()">Place Order</button>
+              </div>
             </form>
            
            </div>
@@ -476,5 +478,13 @@
 
     <script src="js/type.js">
         
+    </script>
+    <script>
+    function clearInputField() {
+        document.getElementById('myForm').reset();
+    }
+    function myFunction() {
+        alert("Your order has been placed. Thank you!");
+    }
     </script>
 </html>

@@ -107,7 +107,7 @@ p{
 }
 
 button{
-  width: 100%;
+  width: 95%;
   margin-top: 10px;
   padding: 10px;
   border: none;
@@ -116,8 +116,22 @@ button{
   color: #fff;
   font-size: 15px;
   font-weight: bold;
+  transition: all 200ms ease-in-out;
 }
 button:hover{
   cursor: pointer;
-  background: #f35f16;
+  background: #f08b58;
+  
+  width: 100%;
+}
+button:active {
+  cursor: pointer;
+  background: #f1b597;
+  
+  width: 100%;
+}
+
+.btncontainer {
+  display: flex;
+  justify-content: center;
 }
